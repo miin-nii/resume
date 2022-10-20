@@ -6,18 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume - Hyomin Kim</title>
     <link rel="icon" type="image/png" href="imgs/feather.png" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/bdda508ab5.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
@@ -38,7 +33,7 @@
       <section id="intro">
         <div class="intro__left">
           <h2 class="intro__name">김효민</h2>
-          <strong class="intro__jobPosition">Frontend Developer</strong>
+          <i class="intro__jobPosition">Frontend Developer</i>
         </div>
         <div class="intro__right">
           <p class="intro__introduction">
@@ -47,27 +42,48 @@
             sit sapiente voluptas facilis architecto eligendi nemo nisi dolorum
             illo, numquam adipisci!
           </p>
-          <ul>
-            <li class="intro__contact">
-              <img src="imgs/contact/email.png" alt="" />
-              <a href="mailto: alsdl3344@gmail.com">alsdl3344@gmail.com</a>
-            </li>
-            <li class="intro__contact">
-              <img src="imgs/contact/phone.png" alt="" /> 010-7279-5344
-            </li>
-            <li class="intro__contact">
-              <img src="imgs/contact/github.png" alt="" />
-              <a href="https://github.com/miin-nii" target="_blank"
-                >https://github.com/miin-nii</a
-              >
-            </li>
-            <li class="intro__contact">
-              <img src="imgs/contact/blog.png" alt="" />
-              <a href="https://velog.io/@alsdl3344" target="_blank"
-                >https://velog.io/@alsdl3344</a
-              >
-            </li>
-          </ul>
+          <div class="intro__contact-box">
+            <ul class="intro__contact-box__left">
+              <li class="intro__contact">
+                <img
+                  class="intro__contact-icon"
+                  src="imgs/contact/email.png"
+                  alt=""
+                />
+                <a href="mailto: alsdl3344@gmail.com">alsdl3344@gmail.com</a>
+              </li>
+              <li class="intro__contact">
+                <img
+                  class="intro__contact-icon"
+                  src="imgs/contact/phone.png"
+                  alt=""
+                />
+                010-7279-5344
+              </li>
+            </ul>
+            <ul class="intro__contact-box__right">
+              <li class="intro__contact">
+                <img
+                  class="intro__contact-icon"
+                  src="imgs/contact/github.png"
+                  alt=""
+                />
+                <a href="https://github.com/miin-nii" target="_blank"
+                  >https://github.com/miin-nii</a
+                >
+              </li>
+              <li class="intro__contact">
+                <img
+                  class="intro__contact-icon"
+                  src="imgs/contact/blog.png"
+                  alt=""
+                />
+                <a href="https://velog.io/@alsdl3344" target="_blank"
+                  >https://velog.io/@alsdl3344</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

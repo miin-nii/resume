@@ -29,8 +29,12 @@
 
 /* Universal tags */
 body {
-  font-family: 'Open Sans', sans-serif;
-  cursor: default;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  /* cursor: default; */
+}
+
+a {
+  color: #5598ea;
 }
 
 /* Typography */
@@ -83,4 +87,59 @@ p {
 .navbar__menu__item.active {
   color: var(--color-black);
   font-weight: var(--weight-semi-bold);
+}
+
+/* Intro */
+#intro {
+  display: flex;
+  padding: 40px;
+  padding-top: 100px;
+  background-color: #5598ea;
+}
+
+.intro__left {
+  flex-basis: 50%;
+}
+
+.intro__name {
+  margin-bottom: 8px;
+}
+
+.intro__jobPosition {
+  margin-left: 2px;
+}
+
+.intro__right {
+  flex-basis: 50%;
+}
+
+.intro__introduction {
+  margin-bottom: 20px;
+}
+
+.intro__contact-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d7e1ed;
+  border-radius: 7px;
+  padding: 20px 45px;
+}
+
+.intro__contact-box__left {
+  margin-right: 30px;
+}
+
+.intro__contact {
+  display: flex;
+  align-items: center;
+}
+
+.intro__contact ~ .intro__contact {
+  margin-top: 15px;
+}
+
+.intro__contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
