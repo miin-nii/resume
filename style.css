@@ -174,21 +174,17 @@ p {
 .skills__box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
   justify-items: center;
   margin-top: 60px;
 }
 
 .skills__category {
   font-size: 20px;
+  text-align: center;
 }
 
 .skills__category__title {
   margin-bottom: 25px;
-}
-
-.skills__category li {
-  list-style: inside;
 }
 
 .skills__category li ~ li {
