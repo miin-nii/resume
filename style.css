@@ -75,6 +75,11 @@ h4 {
   color: var(--color-black);
 }
 
+p,
+ul {
+  font-size: var(--font-regular);
+}
+
 /* Header */
 .navbar {
   position: fixed;
@@ -258,6 +263,21 @@ h4 {
   padding: 1px 5px;
   border-radius: var(--size-border-radius);
   color: var(--color-dark-blue);
+}
+
+/* Education */
+.education__list {
+  display: flex;
+  margin-top: 25px;
+}
+
+.education__list__date {
+  color: var(--color-dark-grey);
+  font-weight: var(--weight-bold);
+}
+
+.education__list__school {
+  margin-left: 15px;
 }
 
 /* footer */
