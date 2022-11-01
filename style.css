@@ -32,13 +32,8 @@
   --animation-duration: 300ms;
 }
 
-/* Universal tags */
-body {
-  padding: 0 200px;
-}
-
 section {
-  padding: 70px 0;
+  padding: 70px 200px 0;
 }
 
 a {
@@ -53,6 +48,7 @@ a {
 .section-divider {
   width: 100%;
   height: 2px;
+  margin-top: 70px;
   background-color: var(--color-grey);
 }
 
@@ -83,8 +79,8 @@ ul {
 /* Header */
 .navbar {
   position: fixed;
-  right: 200px;
-  padding: 50px 0;
+  width: 100%;
+  padding: 70px 200px;
 }
 
 .navbar__menu {
@@ -109,11 +105,19 @@ ul {
   font-weight: var(--weight-semi-bold);
 }
 
+.navbar__toggle-btn {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  font-size: var(--font-medium);
+}
+
 /* Intro */
 #intro {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 150px;
+  padding-top: 190px;
 }
 
 .intro__left {
@@ -260,6 +264,10 @@ ul {
 }
 
 /* Education */
+#education {
+  padding-bottom: 70px;
+}
+
 .education__list {
   display: flex;
   margin-top: 25px;
@@ -286,4 +294,69 @@ footer {
 .footer__copyright {
   font-size: small;
   color: var(--color-dark-grey);
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  section {
+    padding: 70px 70px 0;
+  }
+
+  .navbar {
+    padding: 35px;
+    /* box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.1); */
+    background-color: var(--color-white);
+  }
+
+  .navbar__menu {
+    padding-top: 35px;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0;
+    display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
+
+  .navbar__menu__item {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+    text-align: center;
+    font-size: var(--font-medium);
+  }
+
+  .navbar__menu__item.active {
+    border: 1px solid var(--color-black);
+    border-radius: 4px;
+  }
+
+  .navbar__menu__item ~ .navbar__menu__item {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #intro {
+    padding-top: 100px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro__introduction {
+    margin: 30px 0;
+  }
 }
