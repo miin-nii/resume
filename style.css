@@ -80,7 +80,8 @@ ul {
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 70px 200px;
+  padding: 50px 200px 10px;
+  background-color: var(--color-white);
 }
 
 .navbar__menu {
@@ -117,7 +118,7 @@ ul {
 #intro {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 190px;
+  padding-top: 150px;
 }
 
 .intro__left {
@@ -307,7 +308,10 @@ footer {
   }
 
   section {
-    padding: 70px 70px 0;
+    padding: 50px 70px 0;
+  }
+  .section-title {
+    margin-bottom: 40px;
   }
 
   .navbar {
@@ -358,5 +362,31 @@ footer {
 
   .intro__introduction {
     margin: 30px 0;
+  }
+
+  .projects__item {
+    display: block;
+  }
+
+  .projects__item__left {
+    margin-bottom: 15px;
+  }
+
+  .projects__item__period {
+    display: inline-block;
+  }
+
+  .projects__item__address {
+    display: inline-block;
+    vertical-align: sub;
+    margin-left: 5px;
+  }
+
+  .education__list {
+    display: block;
+  }
+
+  .education__list__school {
+    margin-top: 10px;
   }
 }
