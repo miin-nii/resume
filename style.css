@@ -206,12 +206,6 @@ ul {
   flex-basis: var(--size-flex-basis-left);
 }
 
-.intro__project-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-}
-
 .projects__item__period {
   margin: var(--size-margin-sub) 0;
   color: var(--color-dark-grey);
@@ -223,6 +217,11 @@ ul {
   margin-left: 5px;
   padding: 1px 5px;
   border-radius: var(--size-border-radius);
+}
+
+.projects__item__icon {
+  width: 20px;
+  height: 20px;
 }
 
 .projects__item__right {
@@ -286,6 +285,7 @@ footer {
 .footer__message {
   margin-bottom: 30px;
 }
+
 .footer__copyright {
   font-size: small;
   color: var(--color-dark-grey);
