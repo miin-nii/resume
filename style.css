@@ -32,24 +32,23 @@
   --animation-duration: 300ms;
 }
 
-section {
-  padding: 70px 200px 0;
+.container {
+  margin: 0 200px;
+  border-bottom: 2px solid var(--color-grey);
+  padding: 80px 50px;
+}
+
+.container:last-child {
+  border: none;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 a {
   color: var(--color-dark-blue);
-}
-
-.section-title {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.section-divider {
-  width: 100%;
-  height: 2px;
-  margin-top: 70px;
-  background-color: var(--color-grey);
 }
 
 /* Typography */
@@ -80,7 +79,7 @@ ul {
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 50px 200px 10px;
+  padding: 50px 200px 0;
   background-color: var(--color-white);
 }
 
@@ -92,7 +91,8 @@ ul {
 
 .navbar__menu__item {
   cursor: pointer;
-  margin-bottom: 8px;
+  padding: 5px;
+  margin-bottom: 7px;
   font-size: var(--font-regular);
   color: var(--color-dark-grey);
 }
@@ -118,7 +118,7 @@ ul {
 #intro {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 150px;
+  padding: 180px 50px 80px;
 }
 
 .intro__left {
@@ -175,7 +175,6 @@ ul {
 }
 
 .skills__cf {
-  display: block;
   text-align: center;
 }
 
@@ -186,7 +185,6 @@ ul {
 }
 
 .skills__category {
-  font-size: 20px;
   text-align: center;
 }
 
@@ -194,7 +192,7 @@ ul {
   margin-bottom: 25px;
 }
 
-.skills__category li ~ li {
+.skills__category__list li ~ li {
   margin-top: 15px;
 }
 
@@ -265,10 +263,6 @@ ul {
 }
 
 /* Education */
-#education {
-  padding-bottom: 70px;
-}
-
 .education__list {
   display: flex;
   margin-top: 25px;
@@ -297,7 +291,7 @@ footer {
   color: var(--color-dark-grey);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1335px) {
   :root {
     /* Font size */
     --font-large: 30px;
@@ -307,10 +301,63 @@ footer {
     --font-micro: 12px;
   }
 
-  section {
-    padding: 70px 70px 0;
+  .navbar {
+    padding: 50px 150px 0;
   }
 
+  .container {
+    margin: 0 150px;
+    padding: 50px;
+  }
+
+  #intro {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1176px) {
+  .container {
+    margin: 0 70px;
+  }
+
+  .navbar {
+    padding: 50px 70px 0;
+  }
+}
+
+@media screen and (max-width: 1016px) {
+  .container {
+    padding: 50px 20px;
+  }
+
+  #intro {
+    display: block;
+    padding-top: 150px;
+    text-align: center;
+  }
+
+  .intro__introduction {
+    margin: 30px 0;
+  }
+
+  .intro__contact-box {
+    display: block;
+  }
+
+  .intro__contact-box__right {
+    margin-top: 20px;
+  }
+
+  .education__list {
+    display: block;
+  }
+
+  .education__list__school {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .navbar {
     padding: 35px;
     background-color: var(--color-white);
@@ -351,21 +398,7 @@ footer {
   }
 
   #intro {
-    display: block;
     padding-top: 100px;
-    text-align: center;
-  }
-
-  .intro__introduction {
-    margin: 30px 0;
-  }
-
-  .intro__contact-box {
-    display: block;
-  }
-
-  .intro__contact-box__right {
-    margin-top: 20px;
   }
 
   .projects__item {
@@ -384,13 +417,5 @@ footer {
     display: inline-block;
     vertical-align: sub;
     margin-left: 5px;
-  }
-
-  .education__list {
-    display: block;
-  }
-
-  .education__list__school {
-    margin-top: 10px;
   }
 }
