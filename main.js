@@ -26,6 +26,15 @@ navbarMenue.addEventListener('click', (e) => {
   const active = document.querySelector('.navbar__menu__item.selected');
   active.classList.remove('selected');
   target.classList.add('selected');
+
+  navbarMenue.classList.remove('open');
+  navbar.classList.remove('open');
+});
+
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbar.classList.toggle('open');
+  navbarMenue.classList.toggle('open');
 });
 
 const intro = document.querySelector('#intro');

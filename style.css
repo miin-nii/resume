@@ -343,11 +343,11 @@ footer {
 
   .container {
     margin: 0 150px;
-    padding: 50px;
+    padding: 60px 50px;
   }
 
   #intro {
-    padding: 160px 0 50px;
+    padding: 160px 0 60px;
   }
 }
 
@@ -367,7 +367,7 @@ footer {
 
 @media screen and (max-width: 1016px) {
   .container {
-    padding: 50px 20px;
+    padding: 60px 20px;
   }
 
   #intro {
@@ -403,6 +403,14 @@ footer {
     background-color: var(--color-white);
   }
 
+  .navbar.navbar--dark {
+    padding: 35px;
+  }
+
+  .navbar.open {
+    box-shadow: 0 1px 6px 1px rgba(119, 119, 119, 0.3);
+  }
+
   .navbar__menu {
     padding-top: 35px;
     flex-direction: column;
@@ -423,11 +431,6 @@ footer {
     font-size: var(--font-medium);
   }
 
-  .navbar__menu__item.active {
-    border: 1px solid var(--color-black);
-    border-radius: 4px;
-  }
-
   .navbar__menu__item ~ .navbar__menu__item {
     margin-left: 0;
     margin-top: 5px;
@@ -439,6 +442,7 @@ footer {
 
   .container {
     margin: 0 10px;
+    padding: 70px 50px;
   }
 
   #intro {
