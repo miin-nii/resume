@@ -316,12 +316,12 @@ footer {
 }
 
 @media screen and (max-width: 1176px) {
-  .container {
-    margin: 0 70px;
-  }
-
   .navbar {
     padding: 50px 70px 0;
+  }
+
+  .container {
+    margin: 0 70px;
   }
 }
 
@@ -397,8 +397,16 @@ footer {
     display: block;
   }
 
+  .container {
+    margin: 0 10px;
+  }
+
   #intro {
     padding-top: 100px;
+  }
+
+  .intro__contact-box {
+    padding: 20px;
   }
 
   .projects__item {
@@ -415,7 +423,6 @@ footer {
 
   .projects__item__address {
     display: inline-block;
-    vertical-align: sub;
     margin-left: 5px;
   }
 }
