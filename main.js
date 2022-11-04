@@ -16,11 +16,31 @@ document.addEventListener('scroll', () => {
 navbarMenue.addEventListener('click', (e) => {
   const target = e.target;
   const link = target.dataset.link;
+
   if (!link) {
     return;
   }
 
-  console.log(e.target.dataset.link);
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: 'smooth' });
+  scrollIntoView(link);
 });
+
+const intro = document.querySelector('#intro');
+const introHeight = intro.getBoundingClientRect().height;
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > introHeight / 2) {
+    arrowUp.classList.add('visible');
+  } else {
+    arrowUp.classList.remove('visible');
+  }
+});
+
+arrowUp.addEventListener('click', () => {
+  scrollIntoView('#intro');
+});
+
+// scrollIntoView 함수
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
