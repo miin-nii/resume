@@ -22,6 +22,10 @@ navbarMenue.addEventListener('click', (e) => {
   }
 
   scrollIntoView(link);
+
+  const active = document.querySelector('.navbar__menu__item.selected');
+  active.classList.remove('selected');
+  target.classList.add('selected');
 });
 
 const intro = document.querySelector('#intro');
@@ -39,7 +43,6 @@ arrowUp.addEventListener('click', () => {
   scrollIntoView('#intro');
 });
 
-// scrollIntoView 함수
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });

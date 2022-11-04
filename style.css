@@ -112,7 +112,7 @@ ul {
   margin-left: 20px;
 }
 
-.navbar__menu__item.active {
+.navbar__menu__item.selected {
   color: var(--color-black);
   font-weight: var(--weight-semi-bold);
 }
