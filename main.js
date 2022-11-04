@@ -12,3 +12,15 @@ document.addEventListener('scroll', () => {
     navbarMenue.classList.remove('navbar__menu--dark');
   }
 });
+
+navbarMenue.addEventListener('click', (e) => {
+  const target = e.target;
+  const link = target.dataset.link;
+  if (!link) {
+    return;
+  }
+
+  console.log(e.target.dataset.link);
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+});
