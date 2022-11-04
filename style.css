@@ -465,4 +465,9 @@ footer {
     display: inline-block;
     margin-left: 5px;
   }
+
+  .arrow-up {
+    bottom: 20px;
+    right: 20px;
+  }
 }
