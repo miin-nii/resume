@@ -80,13 +80,24 @@ ul {
   position: fixed;
   width: 100%;
   padding: 50px 200px 0;
+  background-color: transparent;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.navbar.navbar--dark {
   background-color: var(--color-white);
+  padding: 20px 200px 8px;
 }
 
 .navbar__menu {
   display: flex;
   justify-content: flex-end;
   border-bottom: 3px solid var(--color-black);
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+.navbar__menu.navbar__menu--dark {
+  border-bottom: none;
 }
 
 .navbar__menu__item {
@@ -305,19 +316,27 @@ footer {
     padding: 50px 150px 0;
   }
 
+  .navbar.navbar--dark {
+    padding: 20px 150px 8px;
+  }
+
   .container {
     margin: 0 150px;
     padding: 50px;
   }
 
   #intro {
-    padding-bottom: 50px;
+    padding: 160px 0 50px;
   }
 }
 
 @media screen and (max-width: 1176px) {
   .navbar {
     padding: 50px 70px 0;
+  }
+
+  .navbar.navbar--dark {
+    padding: 20px 70px 8px;
   }
 
   .container {
