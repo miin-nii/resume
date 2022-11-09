@@ -207,10 +207,6 @@ ul {
   background-color: var(--color-basic);
 }
 
-.skills__cf {
-  text-align: center;
-}
-
 .skills__box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -226,7 +222,7 @@ ul {
 }
 
 .skills__category__list li {
-  padding: 2px;
+  padding: 5px;
 }
 
 .skills__category__list li ~ li {
@@ -490,6 +486,28 @@ footer {
 
   .intro__contact-box {
     padding: 20px;
+  }
+
+  .skills__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills__category ~ .skills__category {
+    margin-top: 35px;
+  }
+
+  .skills__category__title {
+    margin-bottom: 12px;
+  }
+
+  .skills__category li {
+    width: 150px;
+    margin: auto;
+  }
+
+  .skills__category__list li ~ li {
+    margin-top: 12px;
   }
 
   .projects__item {
