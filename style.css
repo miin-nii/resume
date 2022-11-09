@@ -8,6 +8,8 @@
   --color-dark-blue: #2c87bf;
   --color-blue: #73aace;
   --color-black: #000000;
+  --color-experienced: rgb(254, 210, 210);
+  --color-basic: rgb(200, 241, 255);
 
   /* Font size */
   --font-large: 48px;
@@ -185,6 +187,26 @@ ul {
   margin-bottom: var(--size-margin-sub);
 }
 
+.skills__group ~ .skills__group {
+  margin-top: 10px;
+}
+
+.skills__group.experienced::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  background-color: var(--color-experienced);
+}
+
+.skills__group.basic::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  background-color: var(--color-basic);
+}
+
 .skills__cf {
   text-align: center;
 }
@@ -203,8 +225,25 @@ ul {
   margin-bottom: 25px;
 }
 
+.skills__category__list li {
+  padding: 2px;
+}
+
 .skills__category__list li ~ li {
   margin-top: 15px;
+}
+
+.skills__category__HC,
+.skills__category__JS,
+.skills__category__RE,
+.skills__category__Git,
+.skills__category__Photoshop {
+  background-color: var(--color-experienced);
+}
+
+.skills__category__TS,
+.skills__category__NodeJS {
+  background-color: var(--color-basic);
 }
 
 /* Projects */
