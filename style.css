@@ -27,7 +27,6 @@
   --size-border-radius: 3px;
   --size-flex-basis-left: 30%;
   --size-flex-basis-right: 70%;
-  --size-margin-sub: 13px;
   --size-line-height: 1.6;
 
   /* Animation */
@@ -139,7 +138,7 @@ ul {
 }
 
 .intro__name {
-  margin-bottom: var(--size-margin-sub);
+  margin-bottom: 13px;
 }
 
 .intro__job-position {
@@ -184,7 +183,7 @@ ul {
 
 /* Skills */
 .skills__title {
-  margin-bottom: var(--size-margin-sub);
+  margin-bottom: 17px;
 }
 
 .skills__group ~ .skills__group {
@@ -253,7 +252,7 @@ ul {
 }
 
 .projects__item__period {
-  margin: var(--size-margin-sub) 0;
+  margin: 13px 0;
   color: var(--color-dark-grey);
   font-weight: var(--weight-bold);
 }
@@ -433,6 +432,15 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .container {
+    margin: 0 16px;
+    padding: 50px;
+  }
+
   .navbar {
     padding: 35px;
     background-color: var(--color-white);
@@ -473,11 +481,6 @@ footer {
 
   .navbar__toggle-btn {
     display: block;
-  }
-
-  .container {
-    margin: 0 16px;
-    padding: 70px 50px;
   }
 
   #intro {
@@ -525,6 +528,10 @@ footer {
   .projects__item__address {
     display: inline-block;
     margin-left: 5px;
+  }
+
+  footer {
+    padding-top: 10px;
   }
 
   .arrow-up {
