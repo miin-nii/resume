@@ -30,7 +30,7 @@ HTML, CSS, JavaScript으로 만든 저의 이력서입니다. <br>
 * 버튼을 누르면 해당 section으로 이동
 * 현재 브라우저에 보여지는 section에 따라 상단 메뉴 버튼 활성화
 
-2) 스크롤 내리면 나타 top button
+2) 스크롤을 내리면 나타나는 top button
 
 <br>
 
