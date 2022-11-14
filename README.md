@@ -4,12 +4,12 @@ HTML, CSS, JavaScript으로 만든 저의 이력서입니다. <br>
 
 <br>
 
-## 개발 기간
+## 1. 개발 기간
 2022.10.17 ~ 2022.11.09 (추후 계속 업데이트될 예정)
 
 <br>
 
-## 개발 환경 및 배포 URL
+## 2. 개발 환경 및 배포 URL
 ### 개발 환경
 * Google Chrome Browser
 * HTML, CSS, Vanilla JS
@@ -20,20 +20,16 @@ HTML, CSS, JavaScript으로 만든 저의 이력서입니다. <br>
 
 <br>
 
-## 이미지
+## 3. 이미지
 <img src="https://user-images.githubusercontent.com/102580289/200984329-0e3c8bcd-6de2-497d-8fa0-f4083d13dec1.png" width="500">
 
 <br>
 
-## 주요 기능
+## 4. 주요 기능
 1) 상단 메뉴 
 * 버튼을 누르면 해당 section으로 이동
-* 현재 브라우저에 보여지는 section에 따라 상단 메뉴 버튼 활성화
+* 현재 브라우저에서 보이는 section에 따라 상단 메뉴 버튼 활성화
 
 2) 스크롤을 내리면 나타나는 top button
-
-<br>
-
-## 개발하며 겪은 문제 및 해결
 
 
